@@ -1,0 +1,210 @@
+@charset 'utf-8';
+
+.outcontainer{
+  position: relative;
+  .serve{
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2000;
+    top: -70px;
+    box-shadow: 0 3px 5px 0 #ccc;
+    .left{
+      img{
+        width: 52px;
+        height: 52px;
+        margin: 26px 17px 20px 16px;
+      }
+      .log{
+        margin: 26px 0 0 0 ;
+        >p{
+          &:nth-of-type(1){
+            color: #999999;
+            a{
+              color: #333333;
+              text-decoration: none;
+              &:hover{
+                color: #cb242b;
+              }
+            }
+          }
+          &:nth-of-type(3){
+            width: 68px;
+            height: 22px;
+            background-color: #595454;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 5px;
+            a{
+              font-size: 13px;
+              color:#fde4b3;
+              text-decoration: none;
+            }
+            &:hover{
+              background-color: #000;
+            }
+          }
+          &:nth-of-type(2){
+            width: 68px;
+            height: 22px;
+            margin-right: 11px;
+            background-color: #ffffff;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid  rgb(222, 91, 96);
+            a{
+              font-size: 13px;
+              color: rgb(222, 91, 96);
+              text-decoration: none;
+            }
+            &:hover{
+              a{
+                color: #ffffff;
+              }
+              background-color: rgb(222, 91, 96);
+            }
+          }
+        }
+      }
+    }
+    .hr1{
+      height: 55px;
+      border: 1px solid #eeeeee;
+      margin-top:26px;margin-bottom:20px;margin-left: 28px;
+    }
+    .mid{
+      height: 103px;
+      >ul{
+        list-style: none;
+        margin-left: 40px;
+        >li{
+          margin-top: 17px;
+          margin-right: 50px;
+          >div{
+            margin: 0 auto 5px;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            
+          }
+          >a{
+            font-size: 12px;
+            line-height: 24px;
+            text-decoration: none;
+            color: rgb(119, 119, 119);
+            &:hover{
+              color: #cb242b;
+            }
+          }
+          &:nth-of-type(1){
+            >div{
+              background: url('../img/sprit.png') -2px -2px no-repeat;
+              background-size: 300px 40px;
+            }
+          }
+          &:nth-of-type(2){
+            >div{
+              background: url('../img/sprit.png') -42px -2px no-repeat;
+              background-size: 300px 40px;
+            }
+          }
+          &:nth-of-type(3){
+            >div{
+              background: url('../img/sprit.png') -82px -2px no-repeat;
+              background-size: 300px 40px;
+            }
+          }
+          &:nth-of-type(4){
+            >div{
+              background: url('../img/sprit.png') -120px -2px no-repeat;
+              background-size: 300px 40px;
+            }
+          }
+          &:nth-of-type(5){
+            >div{
+              background: url('../img/sprit.png') -162px -2px no-repeat;
+              background-size: 300px 40px;
+            }
+          }
+          &:nth-of-type(6){
+            >div{
+              background: url('../img/sprit.png') -202px -2px no-repeat;
+              background-size: 300px 40px;
+            }
+          }
+        }
+      }
+    }
+    .hr2{
+      height: 103px;
+      border: 1px solid #eeeeee;
+      margin: 0 0 0 46px;
+  
+    }
+    .right{
+      width: 230px;
+      .up{
+        >span{
+          font-size: 14px;
+          color: #777;
+          font-weight: bold;
+          display: block;
+          cursor: pointer;
+          margin: 12px 16px 0 10px;
+        }
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        .swiper-wrapper{
+          height: 40px;
+          margin-top: 12px;
+          color: rgb(119, 119, 119);
+          cursor: pointer;
+          &:hover{
+            color: #cb242b;
+          }
+        }
+      }
+      .down{
+        ul{
+          margin-left: 20px;
+          list-style: none;
+          >li{
+            margin-top: 20px;
+            margin-right: 5px;
+            >div{
+              width: 14px;
+              height: 14px;
+            }
+            >a{
+              font-size: 12px;
+              color: rgb(119, 119, 119);
+              text-decoration: none;
+              &:hover{
+                color: #cb242b;
+              }
+            }
+            &:nth-of-type(1){
+              >div{
+                background: url('../img/sprit.png') -243px -2px no-repeat;
+                background-size: 300px 40px;
+              }
+            }
+            &:nth-of-type(2){
+              >div{
+                background: url('../img/sprit.png') -262px -2px no-repeat;
+                background-size: 300px 40px;
+              }
+            }
+            &:nth-of-type(3){
+              >div{
+                background: url('../img/sprit.png') -283px -2px no-repeat;
+                background-size: 300px 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

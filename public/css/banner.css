@@ -1,0 +1,38 @@
+@charset 'utf-8';
+.banner .swiper-container {
+  width: 100%;
+  --swiper-theme-color: #fff;
+  --swiper-navigation-size: 20px;
+}
+.banner .swiper-container .swiper-slide {
+  border-radius: 0 0 100px 100px;
+  overflow: hidden;
+  text-align: center;
+}
+.banner .swiper-container .swiper-slide img {
+  width: 1920px;
+  height: 550px;
+  margin: 0 -100%;
+}
+.banner .swiper-pagination {
+  width: 144px !important;
+}
+.banner .swiper-pagination-bullet {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+}
+.banner .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+.banner .swiper-container-horizontal > .swiper-pagination-bullets {
+  left: 1080px;
+  bottom: 80px;
+}
+.banner .swiper-button-prev {
+  left: 270px;
+}
+.banner .swiper-button-next {
+  right: 60px;
+}

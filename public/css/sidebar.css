@@ -1,0 +1,112 @@
+@charset 'utf-8';
+.sidebar {
+  position: absolute;
+  left: 32px;
+  top: 129px;
+  width: 200px;
+  z-index: 1000;
+}
+.sidebar .side-nav {
+  list-style: none;
+  cursor: pointer;
+}
+.sidebar .side-nav:hover > li:nth-of-type(1) {
+  border-radius: 10px 0 0 0;
+}
+.sidebar .side-nav:hover > li:last-of-type {
+  border-radius: 0 0  0 10px;
+}
+.sidebar .side-nav > li {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  background-color: #fbf3f4;
+}
+.sidebar .side-nav > li:nth-of-type(1) {
+  border-radius: 10px 10px 0 0;
+}
+.sidebar .side-nav > li:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+.sidebar .side-nav > li:hover {
+  background-color: #fff;
+}
+.sidebar .side-nav > li:hover .pro {
+  display: block;
+}
+.sidebar .side-nav > li > a {
+  text-decoration: none;
+  position: absolute;
+  left: 15px;
+  font-size: 16px;
+  color: #848484;
+}
+.sidebar .side-nav > li > a:hover {
+  color: #ca141d;
+}
+.sidebar .side-nav > li > span {
+  padding-left: 173px;
+  font-size: 16px;
+  color: #848484;
+}
+.sidebar .side-nav > li .pro {
+  display: none;
+  width: 550px;
+  height: 440px;
+  border-radius: 0 10px 10px 0;
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  left: 200px;
+  cursor: pointer;
+}
+.sidebar .side-nav > li .pro img {
+  margin: 7px;
+  width: 40px;
+  height: 46px;
+}
+.sidebar .side-nav > li .pro > .l-nav1 {
+  list-style: none;
+}
+.sidebar .side-nav > li .pro > .l-nav1 > li {
+  margin: 20px 0 0 33px;
+  width: 230px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.sidebar .side-nav > li .pro > .l-nav1 > li:hover {
+  background-color: #f6f6f6;
+}
+.sidebar .side-nav > li .pro > .l-nav1 > li a {
+  color: #666666;
+  text-decoration: none;
+}
+.sidebar .side-nav .li1 .pro {
+  top: -44px;
+}
+.sidebar .side-nav .li2 .pro {
+  top: -88px;
+}
+.sidebar .side-nav .li3 .pro {
+  top: -132px;
+}
+.sidebar .side-nav .li4 .pro {
+  top: -176px;
+}
+.sidebar .side-nav .li5 .pro {
+  top: -220px;
+}
+.sidebar .side-nav .li6 .pro {
+  top: -264px;
+}
+.sidebar .side-nav .li7 .pro {
+  top: -308px;
+}
+.sidebar .side-nav .li8 .pro {
+  top: -352px;
+}
+.sidebar .side-nav .li9 .pro {
+  top: -396px;
+}

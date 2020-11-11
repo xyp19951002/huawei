@@ -1,0 +1,185 @@
+@charset 'utf-8';
+.outcontainer {
+  position: relative;
+}
+.outcontainer .serve {
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 2000;
+  top: -70px;
+  box-shadow: 0 3px 5px 0 #ccc;
+}
+.outcontainer .serve .left img {
+  width: 52px;
+  height: 52px;
+  margin: 26px 17px 20px 16px;
+}
+.outcontainer .serve .left .log {
+  margin: 26px 0 0 0 ;
+}
+.outcontainer .serve .left .log > p:nth-of-type(1) {
+  color: #999999;
+}
+.outcontainer .serve .left .log > p:nth-of-type(1) a {
+  color: #333333;
+  text-decoration: none;
+}
+.outcontainer .serve .left .log > p:nth-of-type(1) a:hover {
+  color: #cb242b;
+}
+.outcontainer .serve .left .log > p:nth-of-type(3) {
+  width: 68px;
+  height: 22px;
+  background-color: #595454;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 5px;
+}
+.outcontainer .serve .left .log > p:nth-of-type(3) a {
+  font-size: 13px;
+  color: #fde4b3;
+  text-decoration: none;
+}
+.outcontainer .serve .left .log > p:nth-of-type(3):hover {
+  background-color: #000;
+}
+.outcontainer .serve .left .log > p:nth-of-type(2) {
+  width: 68px;
+  height: 22px;
+  margin-right: 11px;
+  background-color: #ffffff;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #de5b60;
+}
+.outcontainer .serve .left .log > p:nth-of-type(2) a {
+  font-size: 13px;
+  color: #de5b60;
+  text-decoration: none;
+}
+.outcontainer .serve .left .log > p:nth-of-type(2):hover {
+  background-color: #de5b60;
+}
+.outcontainer .serve .left .log > p:nth-of-type(2):hover a {
+  color: #ffffff;
+}
+.outcontainer .serve .hr1 {
+  height: 55px;
+  border: 1px solid #eeeeee;
+  margin-top: 26px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+.outcontainer .serve .mid {
+  height: 103px;
+}
+.outcontainer .serve .mid > ul {
+  list-style: none;
+  margin-left: 40px;
+}
+.outcontainer .serve .mid > ul > li {
+  margin-top: 17px;
+  margin-right: 50px;
+}
+.outcontainer .serve .mid > ul > li > div {
+  margin: 0 auto 5px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.outcontainer .serve .mid > ul > li > a {
+  font-size: 12px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #777777;
+}
+.outcontainer .serve .mid > ul > li > a:hover {
+  color: #cb242b;
+}
+.outcontainer .serve .mid > ul > li:nth-of-type(1) > div {
+  background: url('../img/sprit.png') -2px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .mid > ul > li:nth-of-type(2) > div {
+  background: url('../img/sprit.png') -42px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .mid > ul > li:nth-of-type(3) > div {
+  background: url('../img/sprit.png') -82px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .mid > ul > li:nth-of-type(4) > div {
+  background: url('../img/sprit.png') -120px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .mid > ul > li:nth-of-type(5) > div {
+  background: url('../img/sprit.png') -162px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .mid > ul > li:nth-of-type(6) > div {
+  background: url('../img/sprit.png') -202px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .hr2 {
+  height: 103px;
+  border: 1px solid #eeeeee;
+  margin: 0 0 0 46px;
+}
+.outcontainer .serve .right {
+  width: 230px;
+}
+.outcontainer .serve .right .up {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+.outcontainer .serve .right .up > span {
+  font-size: 14px;
+  color: #777;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  margin: 12px 16px 0 10px;
+}
+.outcontainer .serve .right .up .swiper-wrapper {
+  height: 40px;
+  margin-top: 12px;
+  color: #777777;
+  cursor: pointer;
+}
+.outcontainer .serve .right .up .swiper-wrapper:hover {
+  color: #cb242b;
+}
+.outcontainer .serve .right .down ul {
+  margin-left: 20px;
+  list-style: none;
+}
+.outcontainer .serve .right .down ul > li {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+.outcontainer .serve .right .down ul > li > div {
+  width: 14px;
+  height: 14px;
+}
+.outcontainer .serve .right .down ul > li > a {
+  font-size: 12px;
+  color: #777777;
+  text-decoration: none;
+}
+.outcontainer .serve .right .down ul > li > a:hover {
+  color: #cb242b;
+}
+.outcontainer .serve .right .down ul > li:nth-of-type(1) > div {
+  background: url('../img/sprit.png') -243px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .right .down ul > li:nth-of-type(2) > div {
+  background: url('../img/sprit.png') -262px -2px no-repeat;
+  background-size: 300px 40px;
+}
+.outcontainer .serve .right .down ul > li:nth-of-type(3) > div {
+  background: url('../img/sprit.png') -283px -2px no-repeat;
+  background-size: 300px 40px;
+}

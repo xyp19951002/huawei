@@ -1,0 +1,135 @@
+@charset 'utf-8';
+
+.sidebar{
+  position: absolute;
+  left: 32px;
+  top: 129px;
+  width: 200px;
+  z-index: 1000;
+  .side-nav{
+    list-style: none;
+    cursor: pointer;
+    &:hover{
+      &>li{
+        &:nth-of-type(1){
+          border-radius: 10px 0 0 0;
+        }
+        &:last-of-type{
+          border-radius: 0 0  0 10px;
+        }
+      }
+    }
+    &>li{
+      position: relative;
+      height: 44px;
+      line-height: 44px;
+      background-color: #fbf3f4;
+      &:nth-of-type(1){
+        border-radius: 10px 10px 0 0;
+      }
+      &:last-of-type{
+        border-radius: 0 0 10px 10px;
+      }
+      &:hover{
+        background-color: #fff;
+        .pro{
+          display: block;
+        }
+      }
+      >a{
+        text-decoration: none;
+        position: absolute;
+        left: 15px;
+        font-size: 16px;
+        color: #848484;
+        &:hover{
+          color: #ca141d;
+        }
+      }
+      >span{
+        padding-left: 173px;
+        font-size: 16px;
+        color: #848484;
+      }
+      .pro{
+        display: none;
+        width: 550px;
+        height: 440px;
+        border-radius: 0 10px 10px 0;
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        background-color: #fff;
+        left: 200px;
+        cursor: pointer;
+        img{
+          margin: 7px;
+          width: 40px;
+          height: 46px;
+        }
+        >.l-nav1{
+          list-style: none;
+          >li{
+            margin: 20px 0 0 33px;
+            width: 230px;
+            height: 60px;
+            border-radius: 8px;
+            background-color: #fff;
+            &:hover{
+              background-color: #f6f6f6;
+            }
+            a{
+              color: #666666;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .li1{
+      .pro{
+        top: -44px;
+      }
+    }
+    .li2{
+      .pro{
+        top: -88px;
+      }
+    }
+    .li3{
+      .pro{
+        top: -132px;
+      }
+    }
+    .li4{
+      .pro{
+        top: -176px;
+      }
+    }
+    .li5{
+      .pro{
+        top: -220px;
+      }
+    }
+    .li6{
+      .pro{
+        top: -264px;
+      }
+    }
+    .li7{
+      .pro{
+        top: -308px;
+      }
+    }
+    .li8{
+      .pro{
+        top: -352px;
+      }
+    }
+    .li9{
+      .pro{
+        top: -396px;
+      }
+    }
+  }
+}
