@@ -1,0 +1,128 @@
+@charset 'utf-8';
+
+header{
+  box-shadow: 0 3px 5px 0 #ccc;
+  >div{
+    padding: 18px 0 15px 0;
+    position: relative;
+    .image{
+      margin-right: 54px;
+      &>a>img{
+        width: 205px;
+        height: 36px;
+      }
+    }
+    .list{
+        position: relative;
+        height: 42px;
+        line-height: 40px;
+        margin-right: 24px;
+      >a{
+        color: #333333;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      >.div1{
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background: url(../img/icon-category.png) no-repeat;
+        background-position: 0 -25px;
+        background-size: 100% 200%;
+        position: absolute;
+        top: 8px;
+        left: -25px;
+      }
+      &:hover{
+        >a{
+          color: rgb(202, 20, 29);
+        }
+        >.div1{
+          background: url(../img/icon-category.png) no-repeat;
+          background-position: 0 -1px;
+          background-size: 100% 200%;
+        }
+      }
+    }
+    ul{
+      list-style: none;
+      height: 32px;
+      li{
+        height: 24px;
+        line-height: 24px;
+        margin: 7px 24px 0 0;
+        width: 74px;
+        text-align: center;
+        a{
+          color: #333333;
+          font-size: 16px;
+          text-decoration: none !important;
+          &:hover{
+            color: rgb(202, 20, 29);
+          }
+        }
+      }
+      .dif{
+        a{
+          color: #fff;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+      .dif-red{
+        background-color: #ff8486;
+        border-radius: 12px;
+        &:hover{
+          background-color: #ff9c9e;
+        }
+      }
+      .dif-blue{
+        background-color: #74c7ff;
+        border-radius: 12px;
+        &:hover{
+          background-color: #8fd2ff;
+        }
+      }
+    }
+    input{
+      background-color: #f0f0f0;
+      border: none;
+      outline: none;
+      width: 240px;
+      height: 30px;
+      border-radius: 15px;
+      padding: 0 13px 0 13px;
+    }
+    >span{
+      &:nth-of-type(1){
+        position: absolute;
+        top: 22px;
+        right: 37px;
+        a{
+          color: #999999;
+        }
+      }
+      &:nth-of-type(2){
+        position: absolute;
+        right: 13px;
+        top: 22px;
+      }
+    }
+  }
+}
+
+.hd-sm{
+  padding-top: 10px;
+  font-size: 12px;
+  >div{
+    a{
+      font-size: 12px;
+      color: #BBB;
+      text-decoration: none;
+      &:hover{
+        color: #333333;
+      }
+    }
+  }
+}

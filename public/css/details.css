@@ -1,0 +1,178 @@
+@charset 'utf-8';
+.details {
+  border-top: 1px solid #dddddd;
+  position: relative;
+}
+.details .top {
+  background-color: #ffffff;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+.details .top .title {
+  padding: 36px 0 10px;
+}
+.details .top .title .all {
+  width: 600px;
+  margin: auto;
+}
+.details .top .title .all > div {
+  float: left;
+}
+.details .top .title .all > div a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #a4a4a4;
+  padding: 0 10px 6px;
+  margin: 0 25px;
+}
+.details .top .title .all .active a {
+  color: #ca141d;
+  border-bottom: 2px solid #ca141d;
+}
+.details #product-de {
+  margin-bottom: 60px;
+}
+.details #product-de img {
+  width: 100%;
+}
+.details #product-para .title {
+  font-size: 18px;
+  color: #3a3a3a;
+  border-left: 4px solid #ca141d;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.details #product-para hr {
+  border-top: 1px solid #999999;
+}
+.details #product-para .product-mainpara .left-title,
+.details #product-para .product-main .left-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.details #product-para .product-mainpara ul,
+.details #product-para .product-main ul {
+  margin-left: 66px;
+  list-style: none;
+}
+.details #product-para .product-mainpara ul > li,
+.details #product-para .product-main ul > li {
+  margin-bottom: 24px;
+}
+.details #product-para .product-mainpara ul > li:last-of-type,
+.details #product-para .product-main ul > li:last-of-type {
+  margin-bottom: 0;
+}
+.details #product-para .product-mainpara ul > li > span,
+.details #product-para .product-main ul > li > span {
+  display: block;
+  font-size: 16px;
+}
+.details #product-para .product-mainpara ul > li > span:nth-of-type(1),
+.details #product-para .product-main ul > li > span:nth-of-type(1) {
+  width: 128px;
+  line-height: 24px;
+  margin-right: 54px;
+  user-select: none;
+  word-break: break-all;
+}
+.details #product-para .product-mainpara ul > li > span:nth-of-type(2),
+.details #product-para .product-main ul > li > span:nth-of-type(2) {
+  width: 320px;
+  line-height: 24px;
+  margin-right: 96px;
+}
+.details #product-para .product-mainpara ul > li .note,
+.details #product-para .product-main ul > li .note {
+  color: #999999;
+  font-size: 14px;
+  width: 428px;
+}
+.details #pack-aftersale .pack .title {
+  font-size: 18px;
+  color: #3a3a3a;
+  border-left: 4px solid #ca141d;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.details #pack-aftersale .pack hr {
+  border-top: 1px solid #999999;
+  margin-bottom: 0;
+}
+.details #pack-aftersale .pack .pac-main {
+  padding: 38px 30px 40px 130px;
+}
+.details #pack-aftersale .pack .pac-main p {
+  position: relative;
+}
+.details #pack-aftersale .pack .pac-main p em {
+  font-style: normal;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: #3a3a3a;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  width: 223px;
+}
+.details #pack-aftersale .pack .pac-main p em::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 3px;
+  background: #d8d8d8;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+.details #pack-aftersale .aftersale .title {
+  font-size: 18px;
+  color: #3a3a3a;
+  border-left: 4px solid #ca141d;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.details #pack-aftersale .aftersale hr {
+  border-top: 1px solid #999999;
+  margin-bottom: 0;
+}
+.details #pack-aftersale .aftersale .pac-main {
+  padding: 34px 50px 53px 130px;
+}
+.details #pack-aftersale .aftersale .pac-main p span {
+  position: relative;
+  display: block;
+  padding-left: 16px;
+  line-height: 26px!important;
+  font-size: 14px!important;
+  color: #3a3a3a !important;
+}
+.details #pack-aftersale .aftersale .pac-main p span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 3px;
+  background: #d8d8d8;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.details #pack-aftersale .aftersale .pac-main p span:last-of-type a {
+  text-decoration: none;
+  color: #333333;
+}
+.details .productWorld p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.details #comments > div {
+  width: 100%;
+  height: 100px;
+}

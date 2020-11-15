@@ -1,1 +1,5 @@
-node_modules/
+node_modules/;
+pic1.json;
+pic2.json;
+pic3.json;
+pic4.json;

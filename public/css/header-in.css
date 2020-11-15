@@ -1,0 +1,118 @@
+@charset 'utf-8';
+header {
+  box-shadow: 0 3px 5px 0 #ccc;
+}
+header > div {
+  padding: 18px 0 15px 0;
+  position: relative;
+}
+header > div .image {
+  margin-right: 54px;
+}
+header > div .image > a > img {
+  width: 205px;
+  height: 36px;
+}
+header > div .list {
+  position: relative;
+  height: 42px;
+  line-height: 40px;
+  margin-right: 24px;
+}
+header > div .list > a {
+  color: #333333;
+  font-size: 16px;
+  text-decoration: none;
+}
+header > div .list > .div1 {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon-category.png) no-repeat;
+  background-position: 0 -25px;
+  background-size: 100% 200%;
+  position: absolute;
+  top: 8px;
+  left: -25px;
+}
+header > div .list:hover > a {
+  color: #ca141d;
+}
+header > div .list:hover > .div1 {
+  background: url(../img/icon-category.png) no-repeat;
+  background-position: 0 -1px;
+  background-size: 100% 200%;
+}
+header > div ul {
+  list-style: none;
+  height: 32px;
+}
+header > div ul li {
+  height: 24px;
+  line-height: 24px;
+  margin: 7px 24px 0 0;
+  width: 74px;
+  text-align: center;
+}
+header > div ul li a {
+  color: #333333;
+  font-size: 16px;
+  text-decoration: none !important;
+}
+header > div ul li a:hover {
+  color: #ca141d;
+}
+header > div ul .dif a {
+  color: #fff;
+}
+header > div ul .dif a:hover {
+  color: #fff;
+}
+header > div ul .dif-red {
+  background-color: #ff8486;
+  border-radius: 12px;
+}
+header > div ul .dif-red:hover {
+  background-color: #ff9c9e;
+}
+header > div ul .dif-blue {
+  background-color: #74c7ff;
+  border-radius: 12px;
+}
+header > div ul .dif-blue:hover {
+  background-color: #8fd2ff;
+}
+header > div input {
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  width: 240px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 13px 0 13px;
+}
+header > div > span:nth-of-type(1) {
+  position: absolute;
+  top: 22px;
+  right: 37px;
+}
+header > div > span:nth-of-type(1) a {
+  color: #999999;
+}
+header > div > span:nth-of-type(2) {
+  position: absolute;
+  right: 13px;
+  top: 22px;
+}
+.hd-sm {
+  padding-top: 10px;
+  font-size: 12px;
+}
+.hd-sm > div a {
+  font-size: 12px;
+  color: #BBB;
+  text-decoration: none;
+}
+.hd-sm > div a:hover {
+  color: #333333;
+}

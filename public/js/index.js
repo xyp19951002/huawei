@@ -2,6 +2,7 @@ import './library/jquery.js';
 import 'https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js';
 import './library/swiper.min.js';
 import './library/jquery.lazyload.js';
+import { baseUrl } from './library/config.js';
 
 new Swiper('#banner', {
   loop: true, // 循环模式选项
@@ -68,6 +69,31 @@ new Swiper('#sm-b', {
 
 });
 
-$('.lazy').lazyload({
-  effect: "fadeIn",
-});
+// ajax请求
+
+(function () {
+  $.ajax({
+    type: "get",
+    url: `${baseUrl}/product/getProduct`,
+    dataType: "json",
+    success: function (res) {
+      let tempLi = '';
+      res.forEach((elm, i) => {
+        
+        let picture = JSON.parse(elm.picture);
+
+        tempLi += `<li class="fl-l">
+        <a href="./html/products.html?id=${elm.id}">
+          <img class="lazy" data-original="${picture[0].src}" alt="">
+        </a>
+      </li>`
+      });
+      $('.product>.new-pro').append(tempLi);
+      $('.lazy').lazyload({
+        effect: "fadeIn",
+      });
+    }
+  });
+})();
+
+
