@@ -21,7 +21,8 @@ $('.lazy').lazyload({
       res = res[0];
       let picture = JSON.parse(res.picture);
       let promotion = JSON.parse(res.promotion);
-      let template1 =`
+      let productdetail = JSON.parse(res.productdetail);
+      let template1 = `
       <div>
       <a href="#" title="首页">首页</a>&nbsp;&gt;&nbsp;
       <a href="#" title="手机">手机</a>&nbsp;&gt;&nbsp;
@@ -129,6 +130,17 @@ $('.lazy').lazyload({
       </div>
       `;
       $('.right-intro').append(template2);
+
+      productdetail.forEach((elm, i) => {
+        let template3 = ``;
+        template3 += `
+      <img class="lazy" data-original="${elm.src}" alt="">
+      `;
+        $('#product-de').append(template3);
+        $('.lazy').lazyload({
+          effect: "fadeIn",
+        });
+      });
     }
   });
 })();
