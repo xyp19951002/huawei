@@ -1,5 +1,6 @@
 import './library/jquery.js';
 import './library/jquery.md5.js';
+import 'https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js';
 import { baseUrl } from './library/config.js';
 import cookie from './library/cookie.js';
 

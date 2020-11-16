@@ -13,7 +13,7 @@ $(function() {
     $('[type=text]').on('input', function(e) {
         let target = e.target;
         if (target.type === 'text') {
-            // 表单验证提示文字 清空
+            // 表单验证提示文字 清空,防止叠加累积
             $('.phtext').empty();
             if(phReg.test($('[type=text]').val())) {
                 $('.phtext').append(`<span>手机号可登录</span>`);
