@@ -1,0 +1,520 @@
+.shortcut {
+  height: 36px;
+  width: 100%;
+  background: #2e2828;
+}
+.shortcut .s_sub {
+  height: 100%;
+}
+.shortcut .s_sub .l_ {
+  height: 100%;
+}
+.shortcut .s_sub .l_ > li {
+  height: 100%;
+  float: left;
+  padding: 0 8px;
+  line-height: 36px;
+  position: relative;
+}
+.shortcut .s_sub .l_ > li:before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: #414141;
+}
+.shortcut .s_sub .l_ > li:nth-of-type(1):before {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.shortcut .s_sub .l_ > li > a {
+  color: #afafaf;
+  font-size: 12px;
+}
+.shortcut .s_sub .l_ > li > a:hover {
+  color: #fff;
+}
+.shortcut .s_sub .l_ .more {
+  height: 100%;
+  position: relative;
+  z-index: 2000;
+  width: 74px;
+  box-sizing: border-box;
+}
+.shortcut .s_sub .l_ .more:hover p {
+  background: #fff;
+}
+.shortcut .s_sub .l_ .more > p {
+  position: relative;
+  height: 36px;
+  z-index: 2000;
+  width: 74px;
+  left: -8px;
+}
+.shortcut .s_sub .l_ .more > p > span {
+  font-size: 12px;
+  color: #afafaf;
+  margin-left: 8px;
+}
+.shortcut .s_sub .l_ .more > p > span::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 4px;
+  position: absolute;
+  left: 53px;
+  top: 12px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -70px 1px;
+}
+.shortcut .s_sub .l_ .more:hover {
+  background: #fff;
+}
+.shortcut .s_sub .l_ .more:hover span {
+  color: red;
+  cursor: pointer;
+}
+.shortcut .s_sub .l_ .more:hover span::after {
+  background-position: -85px 1px;
+}
+.shortcut .s_sub .l_ .more .drop_down {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  z-index: 10000;
+  background: #fff;
+  box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 8px 0 8px 8px;
+  padding: 6px 0 12px 0;
+  text-align: center;
+  line-height: 32px;
+  width: 119px;
+  display: none;
+}
+.shortcut .s_sub .l_ .more .drop_down > dl > dt > a {
+  color: #777;
+  font-size: 12px;
+}
+.shortcut .s_sub .l_ .more .drop_down > dl > dt > a:hover {
+  color: #cb242b;
+}
+.shortcut .s_sub .l_ .more:hover .drop_down {
+  display: block;
+}
+.shortcut .s_main {
+  height: 100%;
+}
+.shortcut .s_main .r_ {
+  height: 100%;
+}
+.shortcut .s_main .r_ > li {
+  height: 100%;
+  float: left;
+  padding: 0 8px;
+  line-height: 36px;
+  position: relative;
+}
+.shortcut .s_main .r_ > li:nth-of-type(3):before,
+.shortcut .s_main .r_ > li:nth-of-type(4):before,
+.shortcut .s_main .r_ > li:nth-of-type(5):before,
+.shortcut .s_main .r_ > li:nth-of-type(6):before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: #414141;
+}
+.shortcut .s_main .r_ > li:nth-of-type(7) {
+  padding-left: 23px;
+}
+.shortcut .s_main .r_ > li > a {
+  color: #afafaf;
+  font-size: 12px;
+}
+.shortcut .s_main .r_ > li > a:hover {
+  color: #fff;
+}
+.shortcut .s_main .r_ .servers {
+  height: 100%;
+  position: relative;
+  z-index: 2000;
+  width: 74px;
+  box-sizing: border-box;
+}
+.shortcut .s_main .r_ .servers:hover p {
+  background: #fff;
+}
+.shortcut .s_main .r_ .servers > p {
+  position: relative;
+  height: 36px;
+  z-index: 2000;
+  width: 74px;
+  left: -8px;
+}
+.shortcut .s_main .r_ .servers > p > span {
+  font-size: 12px;
+  color: #afafaf;
+  padding-left: 8px;
+}
+.shortcut .s_main .r_ .servers > p > span::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 4px;
+  position: absolute;
+  left: 53px;
+  top: 12px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -70px 1px;
+}
+.shortcut .s_main .r_ .servers:hover {
+  background: #fff;
+}
+.shortcut .s_main .r_ .servers:hover span {
+  color: red;
+  cursor: pointer;
+}
+.shortcut .s_main .r_ .servers:hover span::after {
+  background-position: -85px 1px;
+}
+.shortcut .s_main .r_ .servers .drop_down {
+  position: absolute;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  top: 36px;
+  right: 0;
+  z-index: 10000;
+  background: #fff;
+  box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+  padding: 6px 0 12px 0;
+  text-align: center;
+  line-height: 32px;
+  display: none;
+}
+.shortcut .s_main .r_ .servers .drop_down > dl > dt > a {
+  color: #777;
+  font-size: 12px;
+}
+.shortcut .s_main .r_ .servers .drop_down > dl > dt > a:hover {
+  color: #cb242b;
+}
+.shortcut .s_main .r_ .servers:hover .drop_down {
+  display: block;
+}
+.shortcut .s_main .r_ .websit {
+  height: 100%;
+  position: relative;
+  z-index: 2000;
+  width: 74px;
+  box-sizing: border-box;
+}
+.shortcut .s_main .r_ .websit:hover p {
+  background: #fff;
+}
+.shortcut .s_main .r_ .websit > p {
+  position: relative;
+  height: 36px;
+  z-index: 2000;
+  width: 74px;
+  left: -8px;
+}
+.shortcut .s_main .r_ .websit > p > span {
+  font-size: 12px;
+  color: #afafaf;
+  padding-left: 8px;
+}
+.shortcut .s_main .r_ .websit > p > span::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 4px;
+  position: absolute;
+  left: 53px;
+  top: 12px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -70px 1px;
+}
+.shortcut .s_main .r_ .websit:hover {
+  background: #fff;
+}
+.shortcut .s_main .r_ .websit:hover span {
+  color: red;
+  cursor: pointer;
+}
+.shortcut .s_main .r_ .websit:hover span::after {
+  background-position: -85px 1px;
+}
+.shortcut .s_main .r_ .websit:hover .drop_down {
+  display: block;
+}
+.shortcut .s_main .r_ .websit .drop_down {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: #fff;
+  z-index: 10000;
+  box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0px 0 8px 8px;
+  display: none;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs {
+  width: 893px;
+  line-height: 20px;
+  color: #777;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dropdown-navs-icon {
+  width: 50px;
+  text-align: center;
+  margin: 37px 46px 0 49px;
+  color: #777;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dropdown-navs-icon > a {
+  color: #777;
+  font-size: 12px;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dropdown-navs-icon > a:hover {
+  color: red;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dropdown-navs-icon > a > i {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-bottom: 3px;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dropdown-navs-icon > a > i::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -202px 0;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dp_ {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  width: 185px;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dp_ .title {
+  margin-bottom: 10px;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dp_ .dp_list > div {
+  width: 80px;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dp_ .dp_list > div > a {
+  font-size: 12px;
+  color: #777;
+  font-weight: 300;
+}
+.shortcut .s_main .r_ .websit .drop_down .dropdown-navs .dp_ .dp_list > div > a:hover {
+  color: red;
+}
+.shortcut .s_main .r_ .phone {
+  height: 100%;
+  position: relative;
+  z-index: 2000;
+  width: 74px;
+  box-sizing: border-box;
+}
+.shortcut .s_main .r_ .phone:hover > p {
+  background: #fff;
+}
+.shortcut .s_main .r_ .phone > p {
+  position: relative;
+  height: 36px;
+  z-index: 2000;
+  width: 74px;
+  left: -8px;
+}
+.shortcut .s_main .r_ .phone > p > span {
+  font-size: 12px;
+  color: #afafaf;
+  padding-left: 8px;
+}
+.shortcut .s_main .r_ .phone > p > span::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 4px;
+  position: absolute;
+  left: 53px;
+  top: 12px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -70px 1px;
+}
+.shortcut .s_main .r_ .phone:hover {
+  background: #fff;
+}
+.shortcut .s_main .r_ .phone:hover span {
+  color: red;
+  cursor: pointer;
+}
+.shortcut .s_main .r_ .phone:hover span::after {
+  background-position: -85px 1px;
+}
+.shortcut .s_main .r_ .phone:hover .drop_down {
+  display: block;
+}
+.shortcut .s_main .r_ .phone .drop_down {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0px 0px 8px 8px;
+  color: #3a3a3a;
+  display: none;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp {
+  padding: 20px 0 20px 0;
+  width: 244px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 {
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-radius: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > a {
+  color: #afafaf;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > a > img {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin-right: 12px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info {
+  line-height: 18px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info > h2 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info p {
+  color: #cb242b;
+  line-height: 16px;
+  font-size: 13px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info > span {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-top: 5px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info .mgr-5 {
+  margin-right: 5px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info > span::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: 1px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info .icon-wechat::before {
+  background-position: -32px 0;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code1 > .code-info .icon-ios::before {
+  background-position: -32px -112px;
+}
+.shortcut .s_main .r_ .phone .drop_down .drp .code2 > .code-info > p {
+  color: #777;
+}
+.shortcut .s_main .r_ .shopp-cart {
+  height: 100%;
+  position: relative;
+  z-index: 2000;
+  width: 74px;
+}
+.shortcut .s_main .r_ .shopp-cart:hover a {
+  background: #fff;
+}
+.shortcut .s_main .r_ .shopp-cart > a {
+  display: block;
+  position: relative;
+  height: 36px;
+  z-index: 2000;
+  width: 74px;
+  left: -8px;
+}
+.shortcut .s_main .r_ .shopp-cart > a > span {
+  font-size: 12px;
+  color: #afafaf;
+  padding-left: 17px;
+}
+.shortcut .s_main .r_ .shopp-cart > a > span::after {
+  content: "";
+  display: inline-block;
+  top: 13px;
+  left: -11px;
+  height: 14px;
+  width: 20px;
+  margin-left: 4px;
+  position: absolute;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -98px -5px;
+}
+.shortcut .s_main .r_ .shopp-cart:hover {
+  background: #fff;
+}
+.shortcut .s_main .r_ .shopp-cart:hover span {
+  color: red;
+  cursor: pointer;
+}
+.shortcut .s_main .r_ .shopp-cart:hover span::after {
+  background-position: -116px -5px;
+}
+.shortcut .s_main .r_ .shopp-cart:hover .drop_down {
+  display: block;
+}
+.shortcut .s_main .r_ .shopp-cart .drop_down {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0px 0px 8px 8px;
+  display: none;
+}
+.shortcut .s_main .r_ .shopp-cart .drop_down .drp {
+  color: #3a3a3a;
+}
+.shortcut .s_main .r_ .shopp-cart .drop_down .drp .minicart_empty {
+  padding: 50px 0 50px;
+  width: 460px;
+  text-align: center;
+  font-size: 14px;
+  color: #a4a4a4;
+}
+.shortcut .s_main .r_ .shopp-cart .drop_down .drp .minicart_empty > p .icon-minicart {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 16px;
+}
+.shortcut .s_main .r_ .shopp-cart .drop_down .drp .minicart_empty > p .icon-minicart::before {
+  position: absolute;
+  left: 180px;
+  background: url(https://res8.vmallres.com/20201021/images/echannel/icon/icon-common.svg) no-repeat;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-position: -262px 0;
+}

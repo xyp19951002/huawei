@@ -148,6 +148,7 @@ i {
   margin-top: 40px;
 }
 .login-btn {
+  cursor: pointer;
   border: none !important;
   outline: none !important;
 }

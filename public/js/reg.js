@@ -34,30 +34,20 @@ $(function() {
             };
         };
 
-        if (target.name === 'infonum') {
-            $('.shortinfo').empty();
-            if(infoReg.test($('[name=infonum]').val())) {
-                console.log('kkk');
-                $('.shortinfo').append(`<span>*&nbsp;&nbsp;输入正确</span>`);
-            } else {
-                $('.shortinfo').append(`<span style="color:red">*&nbsp;&nbsp;输入错误</span>`);
-            };
-        }
-
         if (target.name === 'password') {
             $('.psdinfo').empty();
             let that = $('[name=password]').val();
             let check = passReg.map(function(elm) {
                 return elm.test(that);
             });
-            console.log(check[0],'check');
+
             let strength = check.reduce(function(obj, current) {
                 current && obj.count++;
                 return obj;
             }, {
                 count: 0
             });
-            console.log(strength,'kk');
+
             if (check[0]) {
                 switch (strength.count) {
                     case 2:
