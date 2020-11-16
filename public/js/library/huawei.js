@@ -1,3 +1,9 @@
+// import '../library/jquery.js';
+// import 'https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js';
+// import '../library/swiper.min.js';
+// import '../library/jquery.lazyload.js';
+// import '../library/huawei.js';
+// import { baseUrl } from '../library/config.js';
 (function () {
 
   var Magnifier = function (ele, obj) {
@@ -64,7 +70,7 @@ window.addEventListener('load', function () {
           phoneDispaly = document.querySelector('a.phone-display');
       
       var i = 0, flag = true;
-
+    
       var imgArr = {
           'big': [
               '../img/p1.png',

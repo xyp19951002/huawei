@@ -1,244 +1,125 @@
+@charset 'utf-8';
+
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-.layout{
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
+.confix{
+  width: 960px;
+  margin: auto;
 }
-.left {
+.fl-l{
   float: left;
 }
-.right {
+.fl-r{
   float: right;
 }
-.clearfix:after {
-  content: "";
-  height: 0;
-  display: block;
-  visibility: hidden;
-  clear: both;
+
+nav{
+  background-color: #f2f2f2;
+  height: 38px;
+  .logo{
+    line-height: 38px;
+    img{
+      width: 86px;
+      height: 19px;
+    }
+  }
+  .text{
+    line-height: 38px;
+    b{
+      border-left: 1px solid #c1c1c1;
+      padding-left: 12px;
+      margin-left: 12px;
+    }
+  }
 }
 
-img{
-  border: 0px;
-  display: block;
-}
-li{
-  list-style: none;
-}
-a{
-  color: #000;
-  text-decoration: none;
-}
-em,i{
-  font-style: normal;
-  font-weight: normal;
+.main{
+  .title{
+    span{
+      display:block;
+      width: 160px;
+      margin: auto;
+      font-size: 26px;
+      padding: 80px 0 60px;
+    }
+  }
+  .log{
+    width: 690px;
+    margin: auto;
+    .left{
+      width: 50%;
+      border-right: 1px solid #c1c1c1;
+      >div{
+        width: 160px;
+        height: 160px;
+        padding: 16px;
+        background-color: #f7f7f7;
+        margin-right: 110px;
+        img{
+          width: 128px;
+          height: 128px;
+        }
+      }
+      p{
+        margin-top: 40px;
+        font-size: 12px;
+        color: #838383;
+        width: 265px;
+        margin-right: 54px;
+      }
+    }
+    .right{
+      width: 50%;
+      >div{
+        margin-left: 50px;
+        input{
+          width: 288px;
+          height: 39px;
+          border-radius: 5px;
+          margin-bottom: 23px;
+          background-color: #f2f2f2;
+          outline: none;
+          border: none;
+          padding-left: 12px;
+          &:last-of-type{
+            background-color: rgb(202, 20, 29);
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+        p{
+          cursor: pointer;
+          color: #007dff;
+          margin-bottom: 34px;
+          &:nth-of-type(2){
+            text-align: center;
+          }
+          &:last-of-type{
+            text-align: center;
+            color: #323232;
+            span{
+              margin-right: 56px;
+            }
+          }
+        }
+      }
+    }
+  }
+    
 }
 
-.head {
-  background: rgba(0, 0, 0, 0.05);
-  height: 38px;
-}
-.head .logol {
-  margin-top: 8px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.head .logol > img {
-  height: 20px;
-  width: auto;
-}
-.head .web-name {
-  font-size: 13px;
-  height: 38px;
-  line-height: 38px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 6px;
-}
-.head .web-name i {
-  height: 16px;
-  margin: 11px 12px;
-  width: 1px;
-  display: inline-block;
-  vertical-align: middle;
-  background: rgba(0, 0, 0, 0.2);
-}
-.head .web-name span {
-  font-weight: 600;
-}
-.main .title {
-  padding: 80px 0 64px;
-  font-size: 26px;
-  color: #191919;
-  box-sizing: border-box;
-  text-align: center;
-}
-.main .login-info {
+.footer{
+  height: 88px;
+  background-color: #f2f2f2;
   font-size: 12px;
-  width: 760px;
-  margin: 0 auto;
-  text-align: center;
-}
-.main .login-info .hwid-fullpage-l .hwid-qrCode-imgDIv {
-  background: #F7F7F7;
-  border-radius: 8px;
-  padding: 20px;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto;
-}
-.main .login-info .hwid-fullpage-l .hwid-full-qrcode-desc {
-  margin-top: 50px;
-  line-height: 22px;
-  font-size: 12px;
-  color: #838383;
-  box-sizing: content-box;
-}
-.main .login-info .hwid-fullpage-line {
-  background: rgba(0, 0, 0, 0.1);
-  margin: 0 48px;
-  height: 240px;
-  display: inline-block;
-  width: 1px;
-  vertical-align: top;
-}
-.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .inp {
-  padding: 0 13px;
-  border: none;
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.05);
-  outline: 0;
-  height: 42px;
-  line-height: 42px;
-  width: 300px;
-  font-size: 14px;
-  color: #191919;
-  margin-top: 20px;
-}
-.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .inp::before {
-  content: "\f070";
-  color: #aaa;
-  font-size: 22px;
-  font-family: FontAwesome;
-  position: absolute;
-  right: 25px;
-  top: 44px;
-}
-.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .smslogin {
-  font-size: 16px;
-  padding-top: 10px;
-  text-align: left;
-}
-.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .smslogin a {
-  color: #007dff;
-}
-.main .login-info .hwid-fullpage-r .hwid-pwdlogin-root .login-btn {
-  background: #CA141D;
-  color: #fff;
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  width: 300px;
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 8px;
-  padding: 0 13px;
-  margin-top: 40px;
-}
-.login-btn{
-  border: none !important;
-  outline: none !important;
-}
-.main .login-info .hwid-fullpage-r .hwid-full-link {
-  padding-top: 40px;
-}
-.main .login-info .hwid-fullpage-r .hwid-full-link > a {
-  font-size: 16px;
-  color: #007dff;
-  padding: 0 15px;
-}
-.main .login-info .hwid-fullpage-r .hwid-full-link > a::before {
-  display: inline-block;
-  position: relative;
-  bottom: -3px;
-  left: -17px;
-  content: "";
-  width: 1px;
-  height: 16px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.1);
-  clear: both;
-  padding-top: 3px;
-}
-.main .login-info .hwid-fullpage-r .hwid-full-link > a:nth-of-type(1)::before {
-  display: none;
-}
-.main .login-info .hwid-third-login-list {
-  padding: 30px 0 40px;
-  text-align: center;
-}
-.main .login-info .hwid-third-login-list > span {
-  width: 40px;
-  height: 40px;
-  margin: 0 25px;
-  cursor: pointer;
-  border-radius: 50%;
-  display: inline-block;
-}
-.main .login-info .hwid-third-login-list .hwid-icon-third_qq {
-  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/js/mobile_rss/vuebuild/img/third_qq.svg) no-repeat;
-  background-position: 50%;
-  background-size: contain;
-}
-.main .login-info .hwid-third-login-list .hwid-icon-third_qq:hover {
-  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/js/mobile_rss/vuebuild/img/third_qq_hover.svg) no-repeat;
-  background-position: 50%;
-  background-size: contain;
-}
-.main .login-info .hwid-third-login-list .hwid-icon-third_alipay {
-  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/js/mobile_rss/vuebuild/img/third_alipay.svg) no-repeat;
-  background-position: 50%;
-  background-size: contain;
-}
-.main .login-info .hwid-third-login-list .hwid-icon-third_alipay:hover {
-  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/js/mobile_rss/vuebuild/img/third_alipay_hover.svg) no-repeat;
-  background-position: 50%;
-  background-size: contain;
-}
-.main .login-info .hwid-third-login-list .hwid-icon-third_weixin {
-  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/js/mobile_rss/vuebuild/img/third_weixin.svg) no-repeat;
-  background-position: 50%;
-  background-size: contain;
-}
-.main .login-info .hwid-third-login-list .hwid-icon-third_weixin:hover {
-  background: url(https://id1.cloud.huawei.com/CAS/up/idmw_rss_61/js/mobile_rss/vuebuild/img/third_weixin_hover.svg) no-repeat;
-  background-position: 50%;
-  background-size: contain;
-}
-.footer {
-  background: rgba(0, 0, 0, 0.05);
-  width: 100%;
-  color: #333;
-  padding: 44px 0;
-}
-.footer .warrant-area {
-  text-align: center;
-  font-size: 12px;
-  color: #999;
-}
-.footer .warrant-area a:hover {
-  text-decoration: underline;
-}
-.footer .warrant-area em {
-  padding: 0 10px;
-}
-.footer .ft {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 12px;
-  color: #999;
-  opacity: 0.3;
+  padding-top: 28px;
+
+  p{
+    text-align: center;
+    &:nth-of-type(2){
+      color: #a9a9a9;
+    }
+  }
 }
